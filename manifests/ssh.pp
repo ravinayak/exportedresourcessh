@@ -1,10 +1,10 @@
 class exportedresourcessh::ssh(
-  String $::hostname,
-  String $::sshdsakey,
+  String $hostname,
+  String $sshdsakey,
 ) {
   # Declare
-  @@sshkey { $::hostname:
+  @@sshkey { $hostname:
     type => dsa,
-    key  => $::sshdsakey,
+    key  => $sshdsakey,
   }
 }
