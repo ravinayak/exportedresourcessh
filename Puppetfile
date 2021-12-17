@@ -1,0 +1,1 @@
+mod 'puppetlabs-accounts', '7.1.1'
