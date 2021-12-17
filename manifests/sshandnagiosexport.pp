@@ -7,9 +7,9 @@ class exportedresourcessh::sshandnagiosexport {
     uid          => 10090,
     shell        => '/usr/bin/bash',
     system       => false,
-    comment      => 'Neo-16 Nayak'
+    comment      => 'Neo-16 Nayak',
     sshkeys      => [$sshdsakey],
-    sshkey_group => 'neo16'
+    sshkey_group => 'neo16',
     sshkey_owner => 'neo16'
   }
 
