@@ -21,4 +21,11 @@ class exportedresourcessh::sshandnagiosexport {
   # Collector
   Exportedresourcessh::Ssh <| |>
   Exportedresourcessh::Nagios_service <| |>
+
+  # In the above declaration although we have defined resource collectors, none of the exported resources will be realized until the class 
+  # which houses them is declared
+  # Virtual or exported resources are evaluated only in stages in which they are declared, not in which they are realized. What this means 
+  # is that if we use a resource collector like above or realize function in the class, the puppet compiler will not evalulate the resource 
+  # in stages in which the resources are realized like the class above but only in those stages in which the resources are declared, i.e the
+  # manifest in which this class is included
 }
